@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikTokライバー 9月配信レポート</title>
+    <title>AIRPure 配信レポート</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://www.google-analytics.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Noto Sans JP', sans-serif;
         }
+        /* Responsive Font Sizes using clamp() */
+        h1 {
+            font-size: clamp(2.25rem, 6vw, 3rem); /* min, preferred, max */
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: clamp(1.25rem, 4vw, 1.5rem);
+        }
+        h3 {
+            font-size: clamp(1.1rem, 3vw, 1.25rem);
+        }
+
         .date-badge {
             flex-shrink: 0;
             width: 70px; /* 日付の幅を統一 */
@@ -43,34 +55,34 @@
 
     <div class="max-w-7xl mx-auto">
         <header class="text-center mb-10">
-            <h1 class="text-3xl sm:text-4xl font-bold text-cyan-400">TikTokライバー 9月配信レポート</h1>
+            <h1 class="font-bold text-cyan-400">AIRPure<br>配信レポート</h1>
             <p class="text-gray-400 mt-2">2025年9月の活動状況と営業ノルマ分析</p>
         </header>
 
         <!-- サマリー -->
         <div class="mb-12 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700">
-            <h2 class="text-2xl font-bold mb-4 text-amber-400 border-b-2 border-amber-500 pb-2">活動サマリー</h2>
+            <h2 class="font-bold mb-4 text-amber-400 border-b-2 border-amber-500 pb-2">活動サマリー</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div>
-                    <h3 class="font-semibold text-lg text-green-400 mb-2">【特に活動的なライバー】</h3>
+                    <h3 class="font-semibold text-green-400 mb-2">【特に活動的なライバー】</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-1">
-                        <li>airpure_fuma</li>
+                        <li>楓真 (airpure_fuma)</li>
                         <li>樹ｰJuriｰ</li>
                         <li>とおる</li>
                         <li>雫 (airpure_shizuku)</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-lg text-blue-400 mb-2">【本日(9/25)活動したライバー】</h3>
+                    <h3 class="font-semibold text-blue-400 mb-2">【本日(9/25)活動したライバー】</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-1">
-                        <li>airpure_fuma</li>
+                        <li>楓真 (airpure_fuma)</li>
                         <li>雫 (airpure_shizuku)</li>
                         <li>えいとっぴ🤩💛</li>
                         <li>とおる</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="font-semibold text-lg text-red-400 mb-2">【活動が少ない/停止中のライバー】</h3>
+                    <h3 class="font-semibold text-red-400 mb-2">【活動が少ない/停止中のライバー】</h3>
                     <ul class="list-disc list-inside text-gray-300 space-y-1">
                         <li>乃蒼 (airpure_noa) - <span class="text-gray-500">9/14以降配信なし</span></li>
                         <li>奏汰(かなた) - <span class="text-gray-500">9/19以降配信なし</span></li>
@@ -79,16 +91,50 @@
                 </div>
             </div>
         </div>
+        
+        <!-- NEW SECTION: パフォーマンスランキング -->
+        <div class="mb-12 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700">
+            <h2 class="font-bold mb-4 text-amber-400 border-b-2 border-amber-500 pb-2">9月度 パフォーマンスランキング <span class="text-sm font-normal text-gray-400">(9/1～9/24)</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-200">
+                <!-- ダイヤモンドランキング -->
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <h3 class="font-bold mb-3 text-center">💎 ダイヤモンド獲得数</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><span class="text-2xl text-yellow-400 mr-2">🥇</span> 1. 楓真 <span class="ml-auto font-semibold">148,507</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-gray-400 mr-2">🥈</span> 2. 愛生 <span class="ml-auto font-semibold">82,725</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-yellow-600 mr-2">🥉</span> 3. 帝 ガクト <span class="ml-auto font-semibold">71,519</span></li>
+                    </ul>
+                </div>
+                <!-- 配信時間ランキング -->
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <h3 class="font-bold mb-3 text-center">🕒 総LIVE配信時間</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><span class="text-2xl text-yellow-400 mr-2">🥇</span> 1. 楓真 <span class="ml-auto font-semibold">46時間19分</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-gray-400 mr-2">🥈</span> 2. 樹ｰJuriｰ <span class="ml-auto font-semibold">34時間05分</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-yellow-600 mr-2">🥉</span> 3. 帝 ガクト <span class="ml-auto font-semibold">18時間23分</span></li>
+                    </ul>
+                </div>
+                <!-- 新規フォロワーランキング -->
+                <div class="bg-gray-900 border border-gray-700 rounded-lg p-4">
+                    <h3 class="font-bold mb-3 text-center">👤 新規フォロワー数</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center"><span class="text-2xl text-yellow-400 mr-2">🥇</span> 1. 樹ｰJuriｰ <span class="ml-auto font-semibold">109人</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-gray-400 mr-2">🥈</span> 2. 楓真 <span class="ml-auto font-semibold">71人</span></li>
+                        <li class="flex items-center"><span class="text-2xl text-yellow-600 mr-2">🥉</span> 3. 帝 ガクト <span class="ml-auto font-semibold">61人</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- NEW SECTION: ペナルティ実行状況 -->
         <div class="mb-12 bg-gray-800 p-6 rounded-2xl shadow-lg border border-gray-700">
-            <h2 class="text-2xl font-bold mb-4 text-amber-400 border-b-2 border-amber-500 pb-2">営業ノルマと配信ペナルティ実行状況</h2>
-            <p class="text-gray-400 mb-6 text-sm">※ノルマ未達者は、報告日の翌週に1時間以上のTikTokライブ配信を行うルール。以下はその履行状況の分析です。</p>
+            <h2 class="font-bold mb-4 text-amber-400 border-b-2 border-amber-500 pb-2">営業ノルマと配信ペナルティ実行状況</h2>
+            <p class="text-gray-400 mb-6 text-sm">※ノルマ未達者は、報告日の翌週に合計1時間以上のTikTokライブ配信を行うルール。以下はその履行状況の分析です。</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
                 <!-- 9/2報告分 -->
                 <div class="penalty-card bg-gray-900 border border-gray-700 rounded-lg p-4">
-                    <h3 class="font-bold text-lg mb-3">9/2報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/3-9/9)</span></h3>
+                    <h3 class="font-bold mb-3">9/2報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/3-9/9)</span></h3>
                     <h4 class="font-semibold text-green-400">約束を守ったライバー</h4>
                     <ul class="mb-3 text-gray-300">
                         <li>帝 ガクト</li>
@@ -103,7 +149,7 @@
 
                 <!-- 9/9報告分 -->
                 <div class="penalty-card bg-gray-900 border border-gray-700 rounded-lg p-4">
-                    <h3 class="font-bold text-lg mb-3">9/9報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/10-9/16)</span></h3>
+                    <h3 class="font-bold mb-3">9/9報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/10-9/16)</span></h3>
                     <h4 class="font-semibold text-green-400">約束を守ったライバー</h4>
                     <ul class="mb-3 text-gray-300">
                         <li>帝 ガクト</li>
@@ -117,7 +163,7 @@
 
                 <!-- 9/17報告分 -->
                 <div class="penalty-card bg-gray-900 border border-gray-700 rounded-lg p-4">
-                    <h3 class="font-bold text-lg mb-3">9/17報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/18-9/24)</span></h3>
+                    <h3 class="font-bold mb-3">9/17報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/18-9/24)</span></h3>
                     <h4 class="font-semibold text-green-400">約束を守ったライバー</h4>
                     <ul class="mb-3 text-gray-300">
                         <li>帝 ガクト</li>
@@ -136,7 +182,7 @@
                 
                 <!-- 9/23報告分 -->
                 <div class="penalty-card bg-gray-900 border border-gray-700 rounded-lg p-4">
-                    <h3 class="font-bold text-lg mb-3">9/23報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/24-9/30)</span></h3>
+                    <h3 class="font-bold mb-3">9/23報告分 <span class="text-sm font-normal text-gray-400">(対象週: 9/24-9/30)</span></h3>
                     <h4 class="font-semibold text-green-400">既に約束を守ったライバー</h4>
                     <ul class="mb-3 text-gray-300">
                         <li>雫</li>
@@ -156,12 +202,12 @@
         </div>
 
         <!-- クリエイター一覧 -->
-        <h2 class="text-2xl font-bold mb-6 text-amber-400 border-b-2 border-amber-500 pb-2">ライバー別 配信履歴</h2>
+        <h2 class="font-bold mb-6 text-amber-400 border-b-2 border-amber-500 pb-2">ライバー別 配信履歴</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- 帝 ガクト -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-cyan-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-cyan-400">帝 ガクト</h2>
+                <h3 class="font-bold text-cyan-400">帝 ガクト</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_gackt</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月21日:</span> <span class="ml-2">2時間3分, 19分</span></p>
@@ -179,9 +225,9 @@
                 </div>
             </div>
 
-            <!-- airpure_fuma -->
+            <!-- 楓真 (airpure_fuma) -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-green-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-green-400">airpure_fuma (楓真)</h2>
+                <h3 class="font-bold text-green-400">楓真 (airpure_fuma)</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_fuma</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月25日:</span> <span class="ml-2 text-blue-300 font-bold">1時間45分</span></p>
@@ -210,7 +256,7 @@
 
             <!-- 樹ｰJuriｰ -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-green-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-green-400">樹ｰJuriｰ</h2>
+                <h3 class="font-bold text-green-400">樹ｰJuriｰ</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure.juri</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月24日:</span> <span class="ml-2">3分, 32秒, 46分, 27分, 5分</span></p>
@@ -239,7 +285,7 @@
 
             <!-- 雫 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-green-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-green-400">雫</h2>
+                <h3 class="font-bold text-green-400">雫</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_shizuku</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月25日:</span> <span class="ml-2 text-blue-300 font-bold">1時間41分</span></p>
@@ -259,7 +305,7 @@
 
             <!-- とおる -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-green-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-green-400">とおる (透)</h2>
+                <h3 class="font-bold text-green-400">とおる</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_toru</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月25日:</span> <span class="ml-2 text-blue-300 font-bold">22分</span></p>
@@ -278,7 +324,7 @@
             
             <!-- えいとっぴ🤩💛 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-blue-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-blue-400">えいとっぴ🤩💛 (エイト)</h2>
+                <h3 class="font-bold text-blue-400">えいとっぴ🤩💛 (エイト)</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_eito</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月25日:</span> <span class="ml-2 text-blue-300 font-bold">1時間16分</span></p>
@@ -289,7 +335,7 @@
             
             <!-- 神崎 愛登 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-violet-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-violet-400">神崎 愛登</h2>
+                <h3 class="font-bold text-violet-400">神崎 愛登</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure__manato</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月21日:</span> <span class="ml-2">40分</span></p>
@@ -304,7 +350,7 @@
 
             <!-- 愛生 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-violet-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-violet-400">愛生</h2>
+                <h3 class="font-bold text-violet-400">愛生</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_aki</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月24日:</span> <span class="ml-2">52分</span></p>
@@ -321,7 +367,7 @@
 
             <!-- 水瀬 凪 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-violet-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-violet-400">水瀬 凪</h2>
+                <h3 class="font-bold text-violet-400">水瀬 凪</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_nagi</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月23日:</span> <span class="ml-2">23分</span></p>
@@ -337,7 +383,7 @@
 
             <!-- 奏汰(かなた) -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-red-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-red-400">奏汰(かなた)</h2>
+                <h3 class="font-bold text-red-400">奏汰(かなた)</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_kanata</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月19日:</span> <span class="ml-2">32分, 9分</span></p>
@@ -349,7 +395,7 @@
 
             <!-- 天照 龍🐉 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-red-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-red-400">天照 龍🐉</h2>
+                <h3 class="font-bold text-red-400">天照 龍🐉</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpureryu</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月21日:</span> <span class="ml-2">53分</span></p>
@@ -359,7 +405,7 @@
             
             <!-- 乃蒼 -->
             <div class="bg-gray-800 p-5 rounded-2xl shadow-lg border border-gray-700 hover:border-red-500 transition-all duration-300">
-                <h2 class="text-xl font-bold text-red-400">乃蒼</h2>
+                <h3 class="font-bold text-red-400">乃蒼</h3>
                 <p class="text-sm text-gray-500 mb-4">@airpure_noa</p>
                 <div class="space-y-2 text-sm max-h-60 overflow-y-auto pr-2">
                     <p class="flex items-start"><span class="date-badge font-semibold text-gray-400">9月14日:</span> <span class="ml-2">1時間7分</span></p>
